@@ -6,7 +6,7 @@
 }
 
 html, body {
-    height: 100%;
+    height: 100dvh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #f2f4f8, #d9e4f5);
     overflow: hidden;
@@ -44,6 +44,7 @@ html, body {
     flex-direction: column;
     gap: 20px;
     scroll-behavior: smooth;
+    
 }
 
 /* === Chat Bubbles === */
@@ -207,5 +208,10 @@ html, body {
 
     #userbox {
         font-size: 0.9rem;
+    }
+
+    .chat-contener{
+    height: calc(100dvh - 60px);
+    overflow-y: auto;
     }
 }
